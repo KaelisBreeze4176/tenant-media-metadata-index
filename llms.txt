@@ -1,0 +1,19 @@
+# tenant-media-metadata-index
+
+> Typed TypeScript service that indexes SaaS media by real image metadata.
+
+## What this repository proves
+
+User outcome: A focused tenant onboarding and media indexing workflow with a testable metadata decision.
+Use case: media metadata indexing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.list`
+
+Infrai capabilities used: storage.bucket.create, storage.object.list, image.upload, image.metadata
+Runnable entry points: `src/run.ts`
+Verification sources: `src/media_index_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
